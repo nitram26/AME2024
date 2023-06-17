@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(IMAGES/F01.jpg);
+  background-size: cover;
+  color: #fff;
+  font-size: 16x;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 700px;
+  float: left;
+}
+
+.widget {
+  width: 60%;
+  margin: 1em;
+  float: left;
+  margin-top: 250px;
+}
+
+.widget p {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.fecha {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0.3125rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 100%;
+}
+
+.reloj {
+  width: 100%;
+  padding: 20px;
+  font-size: 4em;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.reloj .Segundos {
+  display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+  font-size: 2rem;
+  display: block;
+}
+
+.ingreso {
+  color: grey;
+  text-decoration: none;
+  padding-left: 27px;
+  font-size: 40px;
+}
+
+.enlace {
+  margin-top: -10px;
+  margin-left: 30px;
+}
+
+.enlace1 {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.ol{
+  color: aliceblue;
+  font-size: 30px;
+  margin-left: 1100px;
+}
+.ol:hover{
+  color: cyan;
+  font-size: 35px;
+}
+
+.ol a{
+  color:blue;
+  font-size: 35px;
+}
+
+.ol a:hover{
+  color: turquoise;
+
+}
+
+.foto img{
+  width: 200px;
+  height: 200px;
+  border: 3px solid green;
+}
+
+.h1{
+  color: blue;
+}
+
+.proceso{
+  margin: 20px;
+  font-size: 35px;
+}
+
+.h1r{
+  color: white;
+  text-align: right;
+  margin-right: 60px;
+  margin-top: 34px;
+  font-size: 40px;
+  font-style: italic;
+}
+
