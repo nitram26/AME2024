@@ -15,7 +15,6 @@ $query = mysqli_query($con, $sql);
   <link rel="stylesheet" type="text/css" href="index/login.php">
     <title>LOGIN</title>
     <style>
-    /* login */
 body{
     background-image: url(index/images/ISTP1.jpg);
      background-repeat: no-repeat; background-size: cover;
@@ -34,7 +33,7 @@ function login() {
 }
 </script>
   </head>
-  
+
   <body oncontextmenu="return false">
 <body>
     <br/>
