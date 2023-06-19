@@ -2,7 +2,7 @@
 include("../index/conexion.php");
 $con = conectar();
 
-$sql = "SELECT * FROM alumno";
+$sql = "SELECT * FROM alumnoe";
 $query = mysqli_query($con, $sql);
 ?>
 <!-- /////////////////////////////////////////////////////////////////////// -->
@@ -20,17 +20,17 @@ $query = mysqli_query($con, $sql);
     </script>
   </head>
   <body>
-    <!-- /////////////////////////////////////////////////////////////// -->
     <div class="">
       <div class="">
-        <div class="headere">
+        <!-- /////////////////////////////////////////////////////////////// -->
+        <div class="headerdsi">
           <div class="titulo">
             <img src="../index/images/ISTP_SVM.jpg" alt="ISTP" class="img" />
             <div>
-              <h1>
+              <h1 style= "color:brown ">
                 <i
-                  >INSTITUTO"SAN PEDRO DEL VALLE DE MALA"<br />Base de Datos de
-                  Egresados DE ENFERMERÍA
+                  >INSTITUTO"SAN PEDRO DEL VALLE DE MALA"<br />
+                   ENFERMERIA
                 </i>
               </h1>
             </div>
@@ -42,7 +42,7 @@ $query = mysqli_query($con, $sql);
               enctype="multipart/form-data"
             >
               <tr>
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="id"
@@ -50,7 +50,7 @@ $query = mysqli_query($con, $sql);
                     class="input"
                   />
                 </td>
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="nombres"
@@ -58,7 +58,7 @@ $query = mysqli_query($con, $sql);
                     class="input"
                   />
                 </td>
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="apellido_p"
@@ -69,7 +69,7 @@ $query = mysqli_query($con, $sql);
               </tr>
               <!-- grupo 2 ///////////////////////////////////////////////////////////-->
               <tr>
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="apellido_m"
@@ -77,26 +77,31 @@ $query = mysqli_query($con, $sql);
                     class="input"
                   />
                 </td>
-                <td class="td">
-                  <input
-                    type="text"
-                    name="sexo"
-                    placeholder="SEXO"
-                    class="input"
-                  />
+                <td class="tddsi">
+                     <select name="sexo" id="sexo" class="select">
+                  <option value="">SEXO</option>
+                  <option value="masculino">MASCULINO</option>
+                  <option value="femenino">FEMENINO</option>
+                </select>
+                <select name="condicion" id="condicion" class="select">
+                  <option value="">CONDICIÓN</option>
+                  <option value="egresado">EGRESADO</option>
+                  <option value="titulado">TITULADO</option>
+                </select>
                 </td>
 
-                <td class="td">
+                <td class="tddsi">
+                  <label for="" class="label">Fecha de Nacimiento</label>
                   <input
                     type="date"
                     name="fecha_n"
-                    placeholder="FECHA_NACIMIENTO"
                     class="input"
+                    placeholder=""
                   />
                 </td>
               </tr>
               <tr>
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="email"
@@ -105,7 +110,7 @@ $query = mysqli_query($con, $sql);
                   />
                 </td>
 
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="celular"
@@ -113,7 +118,7 @@ $query = mysqli_query($con, $sql);
                     class="input"
                   />
                 </td>
-                <td class="td">
+                <td class="tddsi">
                   <input
                     type="text"
                     name="egreso"
@@ -124,43 +129,40 @@ $query = mysqli_query($con, $sql);
               </tr>
               <!-- ///grupo3/////////////////////////////////// -->
               <tr>
-                <td class="td">
-                  <input
-                    type="text"
-                    name="red"
-                    placeholder="RED SOCIAL"
-                    class="input"
-                  />
-                </td>
-                <td class="td">
-                  <input
-                    type="text"
-                    name="condicion"
-                    placeholder="CONDICIÓN DEL EGRESADO"
-                    class="input"
-                  />
-                </td>
-                <td class="td">
+                       <td class="tddsi">
                   <input
                     type="text"
                     name="distrito"
-                    placeholder="DISTRITO"
+                    placeholder="VIVE EN:DISTRITO"
+                    class="input"
+                  />
+                </td>
+                <td class="tddsi">
+                <select name="red" id="red" class="select">
+                  <option value=""> RedSOCIAL</option>
+                  <option value="whatsapp">WHATSAPP</option>
+                  <option value="facebook">FACEBOOK</option>
+                  <option value="twitter">TWITTER</option>
+                  <option value="telegram">TELEGRAM</option>
+                  <option value="otra">OTRA</option>
+                </select>
+                <select name="trabajo" id="trabajo" class="select">
+                  <option value=""> TRABAJA EN</option>
+                  <option value="carrera">CARRERA</option>
+                  <option value="similar">SIMILAR</option>
+                  <option value="otra">OTRA</option>
+                </select>
+                </td>
+                     <td class="tddsi">
+                  <input
+                    type="text"
+                    name="direccion"
+                    placeholder="DIRECCIÓN LABORAL"
                     class="input"
                   />
                 </td>
               </tr>
               <!-- //grupo4/////////////////////////////////////////////////////////// -->
-              <tr>
-                <td class="td">
-                  <input
-                    type="text"
-                    name="direccion"
-                    placeholder="DIRECCIÓN"
-                    class="input"
-                  />
-                </td>
-              </tr>
-
               <tr>
                 <td>
                   <input
@@ -173,11 +175,11 @@ $query = mysqli_query($con, $sql);
                   <input type="submit" class="btn" value="INGRESAR DATOS" />
                 </td>
                 <td style="background-color: darkcyan">
-                  <a href="http://localhost/AME2023/buscar.php" class="buscar"
+                  <a href="http://localhost/AME2024/enfermeria/buscar.php" class="buscar"
                     ><i>IR A BUSCAR</i></a
                   >
                   <a
-                    href="http://localhost/AME2023/registros.php"
+                    href="http://localhost/AME2024/enfermeria/registros.php"
                     class="buscar1"
                     ><i>IR A REGISTROS</i></a
                   >
