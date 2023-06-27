@@ -25,7 +25,7 @@ function login() {
     var user, pass;
     user = document.getElementById("usuario").value;
     pass = document.getElementById("contraseña").value;
-    if (user == "DSI" && pass== "2024") {
+    if (user == "DSI" && pass== "1212") {
         window.location ="index/10 RELOJ.HTML"
     }else{
    alert(`\n \n ERROR AL INGRESAR DATOS  \n POR FAVOR, INTÉNTELO UNA VEZ MÁS`)
@@ -39,27 +39,30 @@ function login() {
     <br/>
     <br/>
     <div class="form">
-      <form class="form-login">
+        <form action="index/login_registrar.php" method="post"  class="form-login">
         <h5 class="h5">BIENVENIDA/O</h5>
         <input
           class="controls"
           type="text"
-          id="usuario"
+          id=""
+          name="usuario"
           placeholder="USUARIO"
+          required
         />
         <input
           class="controls"
           type="password"
-          name="contrasena"
-          id="contraseña"
-          placeholder="CONTRASEÑA"
+          name="pass"
+          id=""
+          placeholder="PASSWORD"
+          required
         />
         <input
           class="buttons"
-          id="boton"
-          type="button"
+          id=""
+          type="submit"
           value="INGRESAR"
-          onclick="login()"
+          name="btningresar"
         />
         <p><a href="#">¿Olvidaste tu contraseña?</a></p>
       </form>
