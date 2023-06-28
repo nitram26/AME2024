@@ -26,7 +26,7 @@ function login() {
     user = document.getElementById("usuario").value;
     pass = document.getElementById("contraseña").value;
     if (user == "DSI" && pass== "1212") {
-        window.location ="index/10 RELOJ.HTML"
+        window.location ="index/RELOJ.HTML"
     }else{
    alert(`\n \n ERROR AL INGRESAR DATOS  \n POR FAVOR, INTÉNTELO UNA VEZ MÁS`)
     }
