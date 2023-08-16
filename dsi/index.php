@@ -89,7 +89,6 @@ $query = mysqli_query($con, $sql);
                   <option value="titulado">TITULADO</option>
                 </select>
                 </td>
-
                 <td class="tddsi">
                   <label for="" class="label">Fecha de Nacimiento</label>
                   <input

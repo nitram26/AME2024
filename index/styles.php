@@ -64,6 +64,7 @@ border:12px double darkcyan;
 margin:10px;
 padding:15px;
 width:95%;
+border-radius:20px;
 
 }
 
@@ -156,6 +157,8 @@ border:1px solid brown;
 font-size:20px;
 width:650px ;
 border:1px solid darkcyan;
+border-radius:20px;
+background-color:grey;
 }
 
 .buscar7{
@@ -180,6 +183,10 @@ background-repeat: no-repeat;
 .label{
     padding-left:45px;
      font-weight: bold;
+}
+
+.input{
+    border-radius:20px
 }
 
 

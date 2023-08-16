@@ -15,7 +15,7 @@ $con = conectar();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="../index/styles.php">
-  <title>BUSCAR</title>
+  <title>BUSCAR DSI</title>
 </head>
 
 <!-- /////////////////////////////////////// -->
@@ -23,7 +23,7 @@ $con = conectar();
 <body>
   <div class="buscar7">
     <h2 style="padding-left: 200px;"><i>ISTP "SAN PEDRO DEL VALLE DE MALA"</i></h2>
-    <H1><i>INGRESE UNA REFERENCIA</i></H1>
+    <H1><i>DSI-INGRESE UNA REFERENCIA</i></H1>
     <div class="table">
       <form action="" method="get">
         <input type="text" name='busqueda' class="buscar">

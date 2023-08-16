@@ -13,6 +13,15 @@ $query = mysqli_query($con, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="index/login.php">
+  <style>
+  .h1 {
+  font-style: italic;
+  font-size: 2em;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+  </style>
     <title>LOGIN</title>
     <style>
 body{
@@ -33,13 +42,16 @@ function login() {
 }
 </script>
   </head>
+  <div class="h1"><H1 >SISTEMA DE EGRESADOS </H1></div>
 
   <body oncontextmenu="return false">
 <body>
+ 
     <br/>
     <br/>
     <div class="form">
-        <form action="index/login_registrar.php" method="post"  class="form-login">
+        <form action="index/login_registrar.php" method="post"  class="form-login"><br>
+          
         <h5 class="h5">BIENVENIDA/O</h5>
         <input
           class="controls"

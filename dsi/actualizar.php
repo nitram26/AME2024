@@ -20,7 +20,7 @@ $row = mysqli_fetch_array($query);
     <title>ACTUALIZAR</title>
   </head>
   <body>
-    <h1><i>ACTUALIZAR INFORMACIÓN</i></h1>
+    <h1><i>DSI- ACTUALIZAR INFORMACIÓN</i></h1>
     <div class="header">
       <form action="update.php" method="POST">
         <table>

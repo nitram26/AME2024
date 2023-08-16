@@ -21,7 +21,7 @@ body {
   width: 60%;
   margin: 1em;
   float: left;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .widget p {
@@ -76,7 +76,7 @@ body {
 .ol{
   color: aliceblue;
   font-size: 30px;
-  margin-left: 1100px;
+  margin-left: 1000px;
 }
 .ol:hover{
   color: cyan;
@@ -115,5 +115,7 @@ body {
   margin-top: 34px;
   font-size: 40px;
   font-style: italic;
+ 
+  
 }
 
