@@ -19,30 +19,33 @@ $query = mysqli_query($con, $sql);
         } while (clave != '2024')
     </script>
 </head>
-<body>
+<body style="background-position: 12%;background-color: #00fff0;">
   <!-- //////////////////////////////////////////////////// -->
   <h1 class="th1" style="font-size:25px">ENFERMERIA</h1>
 <div class="">
 <table class="">
 <thead class="">
     <tr class="">
+        <!---->
         <th class="th">ID</th>
         <th class="th">NOMBRES </th>
         <th class="th">APELLIDO_P</th>
         <th class="th">APELLIDO_M</th>
-        <th class="th">SEXO</th>
+        <!--<th class="th">SEXO</th>-->
         <th class="th">FECHA NACIMIENTO</th>
         <th class="th">EMAIL</th>
         <th class="th">CELULAR</th>
+        <!---->
         <th class="th">EGRESO</th>
         <th class="th">RED</th>
+        <!---->
         <th class="th">TRABAJO</th>
         <th class="th">CONDICIÓN</th>
         <th class="th">DISTRITO</th>
         <th class="th">DIRECCIÓN</th>
 
         <!-- ------------------------------------ -->
-        <th class="th">RUTA DE IMAGEN</th>
+        <!--<th class="th">RUTA DE IMAGEN</th>-->
         <th class="th">EDITAR</th>
         <th class="th">ELIMINAR</th>
 
@@ -57,7 +60,7 @@ $query = mysqli_query($con, $sql);
                 <th class="th"><?php echo $row['nombres'] ?></th>
                 <th class="th"><?php echo $row['apellido_p'] ?></th>
                 <th class="th"><?php echo $row['apellido_m'] ?></th>
-                <th class="th"><?php echo $row['sexo'] ?></th>
+                <!--<th class="th"><?php echo $row['sexo'] ?></th>-->
                 <th class="th"><?php echo $row['fecha_n'] ?></th>
                 <th class="th"><?php echo $row['email'] ?></th>
                 <th class="th"><?php echo $row['celular'] ?></th>
@@ -68,9 +71,9 @@ $query = mysqli_query($con, $sql);
                 <th class="th"><?php echo $row['distrito'] ?></th>
                 <th class="th"><?php echo $row['direccion'] ?></th>
 <!-- ----------------------------------------------------- -->
-                <th class="th"><?php echo $row['ejemplo'] ?></th>
-                <th class="th"><a href="actualizar.php?id=<?php echo $row['id'] ?>" class="bot">EDITAR</a></th>
-                <th class="th"><a href="delete.php?id=<?php echo $row['id'] ?>" class="bot">ELIMINAR</a></th>
+                <!--<th class="th"><?php echo $row['ejemplo'] ?></th>-->
+                <th class="th"><a href="actualizar.php?id=<?php echo $row['id'] ?>" class="bot"><img src='./IMAGES/icons8-Edit-32.png' alt='Edit'></a></th>
+                <th class="th"><a href="delete.php?id=<?php echo $row['id'] ?>" class="bot"><img src='./IMAGES/icons8-Trash-32.png' alt='Delete'></a></th>
             </tr>
         <?php
         }
