@@ -25,9 +25,11 @@ $query = mysqli_query($con, $sql);
     <title>LOGIN</title>
     <style>
 body{
+ 
     background-image: url(index/images/ISTP1.jpg);
-     background-repeat: no-repeat; background-size: cover;
-}
+   
+      background-repeat: no-repeat; background-size: cover;
+} 
 </style>
 <script>
 function login() {

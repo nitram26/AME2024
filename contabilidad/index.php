@@ -217,7 +217,7 @@ crossorigin="anonymous">
 
                 <td>
                 <a
-                    href="http://localhost/AME2024-main/index/10%20RELOJ.html"
+                    href="http://localhost/AME2024A/index/10%20RELOJ.HTML"
                     class="buscar1"
                     ><i>MENÚ</i></a>
                 </td>

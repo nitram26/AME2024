@@ -13,13 +13,12 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="../index/styles.php" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-    <link 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
 rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
-crossorigin="anonymous">
+crossorigin="anonymous"> -->
     <script>
-      // do {
+      // do { -->
       //     clave = prompt('INTRODUZCA SU CLAVE')
       // } while (clave != '2024')
     </script>
@@ -58,133 +57,134 @@ crossorigin="anonymous">
 <div class="form-group">
 <label class="col-sm-4 control-label"><h4 style="color: green" align="left">Información Personal </h4> </label>
 </div>
+<!-- ID********************************************************************************************************* -->
+<div class="form-group">
+  <label class="col-sm-2 control-label">Nº de DNI : </label>
+  <div class="col-sm-8">
+    <input type="text" name="id" class="form-control" required="required" placeholder="SOLO NÚMEROS" pattern="[0-9]{3,12}" maxlength="12">
+  </div>
+</div>
+<!-- NOMBRE********************************************************************************************************* -->
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Nº de DNI : </label>
-<div class="col-sm-8">
-<input type="text" name="id" class="form-control" required="required" placeholder="INGRESAR ID">
+  <label class="col-sm-2 control-label">Nombres : </label>
+  <div class="col-sm-8">
+    <input type="text" name="nombres" class="form-control" required="required" placeholder="INGRESAR NOMBRES" pattern="[a-zA-Z]{3,20}" maxlength="20">
+  </div>
 </div>
-</div>
-
+<!-- APELLIDO PATERNO************************************************************************************************* -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Nombres : </label>
-<div class="col-sm-8">
-<input type="text" name="nombres" class="form-control" required="required" placeholder="INGRESAR NOMBRES">
+  <label class="col-sm-2 control-label">Apellido Paterno : </label>
+  <div class="col-sm-8">
+    <input type="text" name="apellido_p" class="form-control" required="required" placeholder="INGRESAR APELLIDO PATERNO" pattern="[a-zA-Z]{3,20}" maxlength="20">
+  </div>
 </div>
-</div>
-
+<!-- APELLIDO MATERNO************************************************************************************************** -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Apellido Paterno : </label>
-<div class="col-sm-8">
-<input type="text" name="apellido_p" class="form-control" required="required" placeholder="INGRESAR APELLIDO PATERNO">
+  <label class="col-sm-2 control-label">Apellido Materno : </label>
+  <div class="col-sm-8">
+    <input type="text" name="apellido_m" class="form-control"  required="required" placeholder="INGRESAR APELLIDO MATERNO" pattern="[a-zA-Z]{3,20}" maxlength="20">
+  </div>
 </div>
-</div>
-
+<!-- GENERO************************************************************************************************************ -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Apellido Materno : </label>
-<div class="col-sm-8">
-<input type="text" name="apellido_m" class="form-control"  required="required" placeholder="INGRESAR APELLIDO MATERNO">
+  <label class="col-sm-2 control-label">Género : </label>
+  <div class="col-sm-7">
+    <select name="sexo" class="form-control" required="required">
+      <option value="">SELECCIONAR GÉNERO</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+    </select>
+  </div>
 </div>
-</div>
-
+<!-- FECHA DE NACIMIENTO************************************************************************************************ -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Género : </label>
-<div class="col-sm-7">
-<select name="sexo" class="form-control" required="required">
-<option value="">SELECCIONAR GÉNERO</option>
-<option value="masculino">Masculino</option>
-<option value="femenino">Femenino</option>
-</select>
+  <label class="col-sm-2 control-label">Fecha Nacimiento</label>
+  <div class="col-sm-8">
+    <input type="date" name="fecha_n" id=""  class="form-control" required="required">
+  </div>
 </div>
-</div>
-
+<!-- CORREO ELECTRÓNICO************************************************************************************************** -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Fecha Nacimiento</label>
-<div class="col-sm-8">
-<input type="date" name="fecha_n" id=""  class="form-control" required="required">
+  <label class="col-sm-2 control-label">Correo Electrónico: </label>
+  <div class="col-sm-8">
+    <input type="email" name="email" id=""  class="form-control" required="required" placeholder="INGRESAR SU EMAIL">
+  </div>
 </div>
-</div>
-
+<!-- N° DE CELULAR******************************************************************************************************* -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Correo Electrónico: </label>
-<div class="col-sm-8">
-<input type="email" name="email" id=""  class="form-control" required="required" placeholder="INGRESAR SU EMAIL">
+  <label class="col-sm-2 control-label">Nº de Celular : </label>
+  <div class="col-sm-8">
+    <input type="text" name="celular" id="contact"  class="form-control" required="required" placeholder="INGRESAR Nº DE CELULAR">
+  </div>
 </div>
-</div>
-
+<!-- RED SOCIAL*********************************************************************************************************** -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Nº de Celular : </label>
-<div class="col-sm-8">
-<input type="text" name="celular" id="contact"  class="form-control" required="required" placeholder="INGRESAR Nº DE CELULAR">
-</div>
-</div>
-
-<div class="form-group">
-<label class="col-sm-2 control-label">Red Social : </label>
-<div class="col-sm-7">
-<select name="red" class="form-control" required="required">
-<option value="">SELECCIONE UNA OPCIÓN</option>
-<option value="whatsapp">WHATSAPP</option>
-<option value="facebook">FACEBOOK</option>
-<option value="twitter">TWITTER</option>
-<option value="telegram">TELEGRAM</option>
-<option value="otra">OTRA</option>
-</select>
-</div>
+  <label class="col-sm-2 control-label">Red Social : </label>
+  <div class="col-sm-7">
+    <select name="red" class="form-control" required="required">
+      <option value="">SELECCIONE UNA OPCIÓN</option>
+      <option value="whatsapp">WHATSAPP</option>
+      <option value="facebook">FACEBOOK</option>
+      <option value="twitter">TWITTER</option>
+      <option value="telegram">TELEGRAM</option>
+      <option value="otra">OTRA</option>
+    </select>
+  </div>
 </div><br>
-
+<!-- AÑO DE EGRESO******************************************************************************************************* -->
 <div class="form-group">
-<label class="col-sm-4 control-label"><h4 style="color: green" align="left">Información Académica</h4> </label>
-</div>
-
-<div class="form-group">
-<label class="col-sm-2 control-label">Año de Egreso : </label>
-<div class="col-sm-8">
-<input type="text" name="egreso" id="contact"  class="form-control" required="required" placeholder="INGRESAR EL AÑO DE EGRESO">
-</div>
+  <label class="col-sm-4 control-label"><h4 style="color: green" align="left">Información Académica</h4> </label>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Condición : </label>
-<div class="col-sm-7">
-<select name="condicion" class="form-control" required="required">
-<option value="">SELECCIONE UNA OPCIÓN </option>
-<option value="graduado">GRADUADO</option>
-<option value="egresado">EGRESADO</option>
-<option value="titulado">TITULADO</option>
-</select>
+  <label class="col-sm-2 control-label">Año de Egreso : </label>
+  <div class="col-sm-8">
+    <input type="text" name="egreso" id="contact"  class="form-control" required="required" placeholder="4 DÍGITOS" pattern="[0-9]" maxlength="4">
+  </div>
 </div>
+<!-- CONDICIÓN********************************************************************************************************** -->
+<div class="form-group">
+  <label class="col-sm-2 control-label">Condición : </label>
+  <div class="col-sm-7">
+    <select name="condicion" class="form-control" required="required">
+      <option value="">SELECCIONE UNA OPCIÓN </option>
+      <option value="egresado">EGRESADO</option>
+      <option value="titulado">TITULADO</option>
+    </select>
+  </div>
 </div><br>
-
+<!-- NOMBRE DE LA EMPRESA*********************************************************************************************** -->
 <div class="form-group">
-<label class="col-sm-4 control-label"><h4 style="color: green" align="left">Información Laboral</h4> </label>
-</div>
-
-<div class="form-group">
-<label class="col-sm-2 control-label">Nombre de Empresa</label>
-<div class="col-sm-8">
-<input type="text" name="distrito" id=""  class="form-control" required="required" placeholder="NOMBRE DE EMPRESA QUE LABORA" >
-</div>
+  <label class="col-sm-4 control-label"><h4 style="color: green" align="left">Información Laboral</h4> </label>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Dirección de Empresa</label>
-<div class="col-sm-8">
-<input type="text" name="direccion" id=""  class="form-control" required="required" placeholder="INDIQUE LA DIRECCIÓN DONDE LABORA" >
+  <label class="col-sm-2 control-label">Nombre de Empresa</label>
+  <div class="col-sm-8">
+    <input type="text" name="distrito" id=""  class="form-control" required="required" placeholder="NOMBRE DE EMPRESA QUE LABORA" >
+  </div>
 </div>
-</div>
-
+<!-- DIRECCIÓN DE LA EMPRESA*********************************************************************************************** -->
 <div class="form-group">
-<label class="col-sm-2 control-label">Cargo que desempeña : </label>
-<div class="col-sm-7">
-<select name="trabajo" class="form-control" required="required">
-<option value="">SELECCIONE UNA OPCIÓN</option>
-<option value="Relacionado a la carrera">Relacionado a la carrera</option>
-<option value="Relacionado a otro especialidad">Relacionado a otro especialidad</option>
-<option value="Otros">Otros</option>
-</select>
+  <label class="col-sm-2 control-label">Dirección de Empresa</label>
+  <div class="col-sm-8">
+    <input type="text" name="direccion" id=""  class="form-control" required="required" placeholder="INDIQUE LA DIRECCIÓN DONDE LABORA" >
+  </div>
 </div>
+<!-- CARGO EN LA EMPRESA*********************************************************************************************** -->
+<div class="form-group">
+  <label class="col-sm-2 control-label">Cargo que desempeña : </label>
+  <div class="col-sm-7">
+    <select name="trabajo" class="form-control" required="required">
+      <option value="">SELECCIONE UNA OPCIÓN</option>
+      <option value="Relacionado a la carrera">Relacionado a la carrera</option>
+      <option value="Relacionado a otro especialidad">Relacionado a otro especialidad</option>
+      <option value="Otros">Otros</option>
+    </select>
+  </div>
 </div>
+<!-- FOTO DEL EGRESADO*********************************************************************************************** -->
 
 <div class="form-group">
 <div class="col-sm-8">
@@ -210,7 +210,7 @@ crossorigin="anonymous">
 
                 <td>
                 <a
-                    href="http://localhost/AME2024-main/index/10%20RELOJ.html"
+                    href="http://localhost/AME2024A/index/10%20RELOJ.HTML"
                     class="buscar1"
                     ><i>MENÚ</i></a>
                 </td>
