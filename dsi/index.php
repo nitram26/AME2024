@@ -13,10 +13,7 @@ $query = mysqli_query($con, $sql);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="../index/styles.php" />
-    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
-rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
-crossorigin="anonymous"> -->
+   
     <script>
       // do { -->
       //     clave = prompt('INTRODUZCA SU CLAVE')
@@ -34,7 +31,7 @@ crossorigin="anonymous"> -->
                 <i>IESTP "SAN PEDRO DEL VALLE DE MALA"<br>
               DESARROLLO DE SISTEMAS</i>
               </h1>
-              <h2 style= "text-align: center;">Registrar Egresados de DSI</h2><br>
+              <h2 style= "text-align: center;">Registrar Egresado de DSI</h2><br>
             </div>
             
           </div>
@@ -44,7 +41,7 @@ crossorigin="anonymous"> -->
   <div class="content-wrapper">
 			<div class="container-fluid">
 
-				<div style=" text-align: center;font-style: italic;background-position: 12%;background-color: aqua;">Se debe llenar todo el formulario</div><br>
+				<div style=" text-align: center;font-style: italic;background-position: 12%;background-color: aqua;">llene el formulario por favor</div><br>
         </div>
           </div>
           <table>
@@ -59,7 +56,7 @@ crossorigin="anonymous"> -->
 </div>
 <!-- ID********************************************************************************************************* -->
 <div class="form-group">
-  <label class="col-sm-2 control-label">Nº de DNI : </label>
+  <label class="col-sm-2 control-label"><b>Nº de DNI</b> : </label>
   <div class="col-sm-8">
     <input type="text" name="id" class="form-control" required="required" placeholder="SOLO NÚMEROS" pattern="[0-9]{3,12}" maxlength="12">
   </div>

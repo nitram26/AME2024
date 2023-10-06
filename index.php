@@ -78,7 +78,7 @@ function login() {
           value="INGRESAR"
           name="btningresar"
         />
-        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+        <p><a href="index/registrar.html">¿Olvidaste tu contraseña?</a></p>
       </form>
     </div>
     <script src="/login.js"></script>

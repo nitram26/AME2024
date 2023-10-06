@@ -10,6 +10,12 @@ body {
   color: #fff;
   font-size: 16x;
 }
+.body {
+  background-image: url(images/fondoRegistrar.jpg);
+  background-size: cover;
+  color: #fff;
+  font-size: 16x;
+}
 
 .wrap {
   width: 100%;
@@ -92,6 +98,7 @@ body {
 .ol:hover{
   color: cyan;
   font-size: 35px;
+  padding: 15px;
 }
 
 .ol a{
@@ -112,11 +119,17 @@ body {
 
 .h1{
   color: blue;
+  margin-top: 40px;
+}
+
+.h1reg{
+  color: rgb(40, 214, 69);
 }
 
 .proceso{
-  margin: 20px;
+  margin-left: 35px;
   font-size: 35px;
+ 
 }
 
 .h1r{
@@ -130,3 +143,20 @@ body {
   
 }
 
+#reg{
+  width: 200px;
+  height: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: rgb(223, 192, 155);
+}
+
+#reg:hover{
+  color: rgba(18, 14, 233, 0.842);
+  font-size: 25px;
+  border: 2px solid red;
+}
+
+.form-reg{
+  background-color: blueviolet;
+}
