@@ -25,10 +25,8 @@ $query = mysqli_query($con, $sql);
     <title>LOGIN</title>
     <style>
 body{
- 
     background-image: url(index/images/ISTP1.jpg);
-   
-      background-repeat: no-repeat; background-size: cover;
+    background-repeat: no-repeat; background-size: cover;
 } 
 </style>
 <script>
@@ -47,10 +45,6 @@ function login() {
   <div class="h1"><H1 >SISTEMA DE EGRESADOS </H1></div>
 
   <body oncontextmenu="return false">
-<body>
- 
-    <br/>
-    <br/>
     <div class="form">
         <form action="index/login_registrar.php" method="post"  class="form-login"><br>
           
@@ -78,7 +72,7 @@ function login() {
           value="INGRESAR"
           name="btningresar"
         />
-        <p><a href="index/registrar.html">¿Olvidaste tu contraseña?</a></p>
+        <p><a href="">Para registrarse ponerse en contacto con el Administrador</a></p>
       </form>
     </div>
     <script src="/login.js"></script>
