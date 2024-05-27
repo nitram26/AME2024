@@ -207,7 +207,7 @@ $query = mysqli_query($con, $sql);
 
                 <td>
                 <a
-                    href="http://localhost/AME2024A/index/10%20RELOJ.HTML"
+                    href="http://localhost/AME2024/index/10%20RELOJ.HTML"
                     class="buscar1"
                     ><i>MENÚ</i></a>
                 </td>
