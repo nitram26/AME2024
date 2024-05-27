@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-06-2023 a las 17:38:17
+-- Tiempo de generación: 28-05-2024 a las 00:08:36
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -50,7 +50,7 @@ CREATE TABLE `alumno` (
 --
 
 INSERT INTO `alumno` (`id`, `nombres`, `apellido_p`, `apellido_m`, `sexo`, `fecha_n`, `email`, `celular`, `egreso`, `red`, `trabajo`, `condicion`, `distrito`, `direccion`, `ejemplo`) VALUES
-('15367782', 'CARLOS MARTIN NESTOR', 'CERVERA', 'PONCE', 'MASCULINO', '26/02/1960', ' carlosmartin1993@gmail.com ', '993300734', '2023', 'WHATSAPP', 'CARRERA', 'PROCESO ', 'PUCUSANA', 'AH. NVO PUCUSANA MZH L 11 ', 'IMAGES/15367782.jpg'),
+('15367782', 'CARLOS MARTIN NESTOR', 'CERVERA', 'PONCE', 'MASCULINO', '26/02/1960', ' carlosmartin1993@gmail.com ', '993300734', '2023', 'WHATSAPP', 'CARRERA', 'PROCESO ', 'PUCUSANA', 'AH. NVO PUCUSANA MZH L 22', 'IMAGES/15367782.jpg'),
 ('45911021', 'WILMER ALBERTO  ', 'FRANCIA ', 'CHUMPITAZ ', 'MASCULINO ', '27/08/1989', 'wfrancia27@gmail.com ', '971833739', '2023', 'WHATSAPP', 'CARRERA', 'EGRESADO', 'MALA ', '', 'IMAGES/45911021.jpg'),
 ('61489705', 'AUGUSTO ', 'FASANANDO ', 'AMIAS ', 'MASCULINO ', '9/04/1999', 'augustofasanando.outlook@gmail.com ', '934025392', 'DSI-2023', 'FACEBOOK ', '', 'EN PROCESO ', 'CHILCA ', '', 'IMAGES/61489705.jpg'),
 ('70097006', 'JOSE LUIS ANGEL  ', 'CAYCHO  ', 'BEDOYA ', 'MASCULINO ', '11/10/2000', 'joseluiscaychobedoya@gmail.com ', '935343374', 'DSI-2023', 'FACEBOOK ', '', 'EN PROCESO ', 'SAN ANTONIO ', '', 'IMAGES/70097006.jpg'),
@@ -146,7 +146,7 @@ INSERT INTO `alumnoe` (`id`, `nombres`, `apellido_p`, `apellido_m`, `sexo`, `fec
 
 CREATE TABLE `usuario` (
   `usuario` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -154,7 +154,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`usuario`, `password`) VALUES
-('DSI', '2024');
+('CARLOS', '$2y$10$/C4Tdaq9guy/yFqTmW3P5uM5u9WsEu3KQP1mddxGjmvwo508qAxQe'),
+('GUADALUPE', '$2y$10$615qywRtSqHjT46gs69HpOZN5plGi.it7na.R43B7goBnn2MbmdSS'),
+('WILMER', '$2y$10$hIyPZBUs5jijx9EPxZ0RiO80CXCSLjc.NkIvwY52JXElA0L0irgHy'),
+('AMELIA', '$2y$10$MI.kkeA6Ytifzb68671GEOLA0PQa5/yt/4Szw8mcBz2oNSU3tPjjy');
 
 --
 -- Índices para tablas volcadas
